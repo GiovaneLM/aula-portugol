@@ -25,9 +25,9 @@ programa
 		escreva("\nVetor 1: ")
 		para (i=0;i<5;i++)
 		{
-			escreva("  ", vetor1[i],"\n")
+			escreva("  ", vetor1[i])
 		}
-		escreva("Vetor 2(ordem inversa): ")
+		escreva("\nVetor 2(ordem inversa): ")
 		para(i2=0;i2<5;i2++)
 		{
 			escreva(vetor2[i2]," ")
