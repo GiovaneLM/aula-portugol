@@ -6,13 +6,13 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro vetor1[5],i,num1,vetor2[5],i2=0
+		inteiro vetor1[5],i,num,vetor2[5],i2=0
 
 		para (i=0;i<5;i++)//ler as 5 posiçoes do vetor
 		{
 			escreva(i," digite um numero: ")
-			leia(num1)
-			vetor1[i] = num1
+			leia(num)
+			vetor1[i] = num
 		}
 
 		para (i=4;i>=0;i--)//ler as 5 posiçoes do vetor
@@ -25,7 +25,7 @@ programa
 		escreva("\nVetor 1: ")
 		para (i=0;i<5;i++)
 		{
-			escreva("  ", vetor2[i2])
+			escreva("  ", vetor1[i],"\n")
 		}
 		escreva("Vetor 2(ordem inversa): ")
 		para(i2=0;i2<5;i2++)
