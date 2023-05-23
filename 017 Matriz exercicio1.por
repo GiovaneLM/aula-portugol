@@ -36,6 +36,7 @@ programa
 				soma = soma + matriz[linha][coluna]
 			}
 			escreva("a soma da linha ",linha," é ",soma,"\n")
+			soma=0
 		}
 	}
 }
