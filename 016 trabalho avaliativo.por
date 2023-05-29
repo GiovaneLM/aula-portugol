@@ -8,6 +8,7 @@ programa
 
 		enquanto (menu)
 		{
+			encontrado=falso
 			escreva("\n1-inserir os numeros no vetor")
 			escreva("\n2-encontrar valor no vetor")
 			escreva("\n3-exibir o vetor completo")
