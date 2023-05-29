@@ -16,6 +16,11 @@ programa
 			escreva("\n0-sair")
 			escreva("\n")
 			leia(opcao)
+			
+			para (i=0;i<10;i++)
+					{					
+						vetor[i] = 0
+					}
 
 			escolha(opcao)
 			{
