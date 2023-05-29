@@ -5,6 +5,11 @@ programa
 	{
 		inteiro vetor[10],i,num,numV,opcao
 		logico menu=verdadeiro, encontrado=falso 
+		
+		para (i=0;i<10;i++)
+					{					
+						vetor[i] = 0
+					}
 
 		enquanto (menu)
 		{
@@ -17,11 +22,6 @@ programa
 			escreva("\n")
 			leia(opcao)
 			
-			para (i=0;i<10;i++)
-					{					
-						vetor[i] = 0
-					}
-
 			escolha(opcao)
 			{
 				caso 1:
