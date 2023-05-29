@@ -3,23 +3,28 @@
 //ímpares existentes entre 0 e 100
 programa
 {
-	inclua biblioteca Util --> u
 	
+inclua biblioteca Util --> u
 	funcao inicio()
 	{
-		inteiro vetor[5],i
-				
-
-		para (i=0;i<100;i++)//ler as 10 posiçoes do vetor
+		inteiro vetor[30],i,num
+		i=0
+		enquanto(i<30)
 		{
-			se(i% != 0)
+			num = u.sorteia(0,100)
+			se(num%2 != 0)
 			{
-				vetor[i] = num
+				vetor[i]=num
+				i++
 			}
-			
+		}
+		para(i=0;i<30;i++)
+		{
+			escreva(" ",vetor[i])
 		}
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
