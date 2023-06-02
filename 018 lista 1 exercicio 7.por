@@ -1,26 +1,39 @@
 //7. Crie um algoritmo que faça o preenchimento automático
 //de um vetor de 30 posições com os 30 primeiros números 
-//ímpares existentes entre 0 e 100
+//ímpares e pares existentes entre 0 e 100
 programa
 {
-	
-inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	funcao inicio()
 	{
-		inteiro vetor[30],i,num
-		i=0
-		enquanto(i<30)
+		inteiro vetor[30],i=0,num,vetor2[30],i2=0
+		
+		enquanto(i<30 ou i2<30)
 		{
 			num = u.sorteia(0,100)
-			se(num%2 != 0)
+			
+			se(num%2 != 0 e i<30)
 			{
 				vetor[i]=num
 				i++
 			}
+			senao se(num%2 == 0 e i2<30)
+			{
+				vetor2[i2]=num
+				i2++
+			}
 		}
+		
+		escreva("os numeros impares")
 		para(i=0;i<30;i++)
 		{
 			escreva(" ",vetor[i])
+		}
+		escreva("\n")
+		escreva("os numeros pares")
+		para(i=0;i<30;i++)
+		{
+			escreva(" ",vetor2[i])
 		}
 	}
 }
