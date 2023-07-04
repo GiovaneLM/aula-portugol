@@ -1,51 +1,51 @@
 programa
 {
 	inclua biblioteca  Util --> u
-	inteiro matrizA[2][2],matrizB[2][2],matrizC[2][2],i,j,k
+	inteiro matrizA[2][2],matrizB[2][2],matrizC[2][2],linha,coluna,k
 	funcao inicio()
 	{
-		para(i=0;i<2;i++)
+		para(linha=0;linha<2;linha++)
 		{
-			para(j=0;j<2;j++)
+			para(coluna=0;coluna<2;coluna++)
 			{
-				matrizA[i][j] = u.sorteia(1, 9)
-				matrizB[i][j] = u.sorteia(1, 9)
+				matrizA[linha][coluna] = u.sorteia(1, 9)
+				matrizB[linha][coluna] = u.sorteia(1, 9)
 			}
 		}
-		para(i=0;i<2;i++)
+		para(linha=0;linha<2;linha++)
 		{
-			para(j=0;j<2;j++)
+			para(coluna=0;coluna<2;coluna++)
 			{
 				para(k=0;k<2;k++)
 				{
-					matrizC[i][j] = matrizC[i][j] + (matrizA[i][k] * matrizB[k][j])
+					matrizC[linha][coluna] = matrizC[linha][coluna] + (matrizA[linha][k] * matrizB[k][coluna])
 				}
 			}
 		}
 		escreva("matrizA\n")
-		para(i=0;i<2;i++)
+		para(linha=0;linha<2;linha++)
 		{
-			para(j=0;j<2;j++)
+			para(coluna=0;coluna<2;coluna++)
 			{
-				escreva(" | ",matrizA[i][j]," | ")
+				escreva(" | ",matrizA[linha][coluna]," | ")
 			}
 			escreva("\n")
 		}
 		escreva("\n\nmatrizB\n")
-		para(i=0;i<2;i++)
+		para(linha=0;linha<2;linha++)
 		{
-			para(j=0;j<2;j++)
+			para(coluna=0;coluna<2;coluna++)
 			{
-				escreva(" | ",matrizB[i][j]," | ")
+				escreva(" | ",matrizB[linha][coluna]," | ")
 			}
 			escreva("\n")
 		}
 		escreva("\n\nmatrizC\n")
-		para(i=0;i<2;i++)
+		para(linha=0;linha<2;linha++)
 		{
-			para(j=0;j<2;j++)
+			para(coluna=0;coluna<2;coluna++)
 			{
-				escreva(" | ",matrizC[i][j]," | ")
+				escreva(" | ",matrizC[linha][coluna]," | ")
 			}
 			escreva("\n")
 		}
