@@ -3,32 +3,14 @@ programa
 	
 inclua biblioteca  Util --> u
 	inteiro matrizA[2][2],matrizB[2][2],matrizC[2][2],linha,coluna,k
-	funcao iniciamatrizA()
+	funcao iniciamatrizes()
 	{
 		para(linha=0;linha<2;linha++)
 		{
 			para(coluna=0;coluna<2;coluna++)
 			{
 				matrizA[linha][coluna] = u.sorteia(1, 9)
-			}
-		}
-	}
-	funcao iniciamatrizB()
-	{
-		para(linha=0;linha<2;linha++)
-		{
-			para(coluna=0;coluna<2;coluna++)
-			{
 				matrizB[linha][coluna] = u.sorteia(1, 9)
-			}
-		}
-	}
-	funcao iniciamatrizC()
-	{
-		para(linha=0;linha<2;linha++)
-		{
-			para(coluna=0;coluna<2;coluna++)
-			{
 				matrizC[linha][coluna] = 00
 			}
 		}
@@ -78,9 +60,7 @@ inclua biblioteca  Util --> u
 	}
 	funcao inicio()
 	{
-		iniciamatrizA()
-		iniciamatrizB()
-		iniciamatrizC()
+		iniciamatrizes()
 		multmatriz()
 		mostrarresultado()
 	}
